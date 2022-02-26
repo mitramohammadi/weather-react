@@ -47,7 +47,7 @@ export default function Search() {
         icon={icon}
       />
       <a
-        href="https://github.com/mitramohammadi/react-weather"
+        href="https://github.com/mitramohammadi/weather-react"
         rel="noreferrer"
         target="_blank"
       >
