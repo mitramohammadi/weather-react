@@ -46,11 +46,7 @@ export default function Search() {
         wind={wind}
         icon={icon}
       />
-      <a
-        href="https://github.com/mitramohammadi/react-weather"
-        alt="git"
-        target="_blank"
-      >
+      <a href="https://github.com/mitramohammadi/react-weather" target="_blank">
         Coded By Mitra
       </a>
     </div>
