@@ -13,7 +13,7 @@ export default function ShowWeather(props) {
           <li>{props.humidity}</li>
           <li>{props.wind}</li>
           <li>
-            <img src={props.icon} />
+            <img src={props.icon} alt="weathericon" />
           </li>
         </ui>
       </div>
