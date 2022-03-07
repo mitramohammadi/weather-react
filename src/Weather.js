@@ -65,9 +65,7 @@ export default function Weather(props) {
                 <span>{weather.city}</span>
               </li>
               <li>
-                <span>
-                  <FormattedDate date={weather.date} />
-                </span>
+                <span></span>
               </li>
               <li>
                 <span>{weather.description}</span>
