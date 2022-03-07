@@ -1,0 +1,51 @@
+body {
+  height: 100%;
+  background-image: url("./pexels-ruvim-3560044.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+.container {
+  font-family: "PT Serif", serif;
+}
+
+.weather-app {
+  border: 1px solid #212529;
+  background-color: rgb(55, 82, 105);
+  max-width: 900px;
+  max-height: 700px;
+  margin: 50px auto;
+  opacity: 0.8;
+}
+
+.input-form {
+  display: block;
+  margin: 40px auto 0;
+  text-align: center;
+}
+.search-city {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid rgba(26, 20, 78, 0.6);
+  width: 350px;
+  height: 46px;
+}
+.search-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid rgba(26, 20, 78, 0.6);
+  color: rgba(26, 20, 78, 0.6);
+  height: 46px;
+  transition: all 200ms ease-in-out;
+}
+
+.search-button:hover {
+  background-color: rgba(26, 20, 78, 0.6);
+  color: rgba(96, 81, 231, 0.6);
+}
+li {
+  list-style: none;
+}

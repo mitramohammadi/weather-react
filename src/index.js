@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Search from "./Search";
-import "./Style.css";
+import Weather from "./Weather";
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
 
 function App() {
   return (
     <div className="App">
-      <div>
-        <h1 className="text-center pt-3">Weather Search Engine</h1>
-        <Search />
+      <div className="container">
+        <Weather city="london" />
       </div>
     </div>
   );
