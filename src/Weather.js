@@ -3,7 +3,8 @@ import "./Weather.css";
 //import ReactAnimatedWeather from "react-animated-weather";
 import "bootstrap/dist/css/bootstrap.css";
 import axios from "axios";
-import FormattedDate from "./formattedDate";
+import FormattedDate from "./FormattedDate";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
   let [weather, setWeather] = useState({});
@@ -21,12 +22,12 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       city: response.data.name,
     });
+    setFlag(true);
   }
 
   function getWeatherInfo() {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
     axios.get(url).then(showWeatherInfo);
-    setFlag(true);
   }
 
   function updateCity(event) {
@@ -55,8 +56,7 @@ export default function Weather(props) {
         <div className="row">
           <div className="col-6">
             <img src={weather.icon} />
-            <span id="current-temp"> {weather.temperature}</span>
-            <a href="#">°C</a>|<a href="#">F</a>
+            <span id="current-temp"> {weather.temperature} °C</span>
           </div>
           <div className="col-6">
             <br />
@@ -65,7 +65,9 @@ export default function Weather(props) {
                 <span>{weather.city}</span>
               </li>
               <li>
-                <span></span>
+                <span>
+                  <FormattedDate date={weather.date} />
+                </span>
               </li>
               <li>
                 <span>{weather.description}</span>
@@ -77,6 +79,7 @@ export default function Weather(props) {
             </ul>
           </div>
         </div>
+        <WeatherForecast coordinates={weather.coordinates} />
         <a
           href="https://github.com/mitramohammadi/weather-react"
           rel="noreferrer"

@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 export default function FormattedDate(props) {
   let days = [
@@ -10,7 +11,6 @@ export default function FormattedDate(props) {
     "Friday",
     "Saturday",
   ];
-
   let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   if (hours < 10) {
