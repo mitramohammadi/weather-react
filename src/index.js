@@ -4,7 +4,7 @@ import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 
-function App() {
+function index() {
   return (
     <div className="App">
       <div className="container">
@@ -15,4 +15,4 @@ function App() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<index />, rootElement);
