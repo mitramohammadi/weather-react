@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.css";
-import "./index.css";
+import "./App.css";
 
-function index() {
+function App() {
   return (
     <div className="App">
       <div className="container">
@@ -15,4 +15,4 @@ function index() {
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<index />, rootElement);
+ReactDOM.render(<App />, rootElement);
